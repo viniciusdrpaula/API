@@ -62,4 +62,4 @@ def excluir_aluno_por_id(aluno_id):
         excluir_aluno(aluno_id)
         return redirect(url_for('alunos.obter_lista_alunos'))
     except AlunoNaoEncontrado:
-        return jsonify({'error': 'Aluno não encontrado'}), 404
+        return jsonify({'error': 'Aluno não encontrado'}), 404  
