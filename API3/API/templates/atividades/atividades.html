@@ -19,9 +19,9 @@
         <tbody>
             {% for atividade in atividades %}
             <tr>
-                <td>{{ atividades.id_atividade }}</td>
-                <td>{{ atividades.id_disciplina }}</td>
-                <td>{{ atividades.enunciado }}</td>
+                <td>{{ atividade.id_atividade }}</td>
+                <td>{{ atividade.id_disciplina }}</td>
+                <td>{{ atividade.enunciado }}</td>
                 <td>
                     <a href="{{ url_for('atividades.mostrar_atividade', id_atividade=atividades.id_atividade) }}">Ver Detalhes</a>
                     <a href="{{ url_for('atividades.formulario_editar_atividade', id_atividade=atividades.id_atividade) }}">Editar</a>
